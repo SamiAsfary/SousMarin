@@ -1,0 +1,40 @@
+body{
+	height: 100%;
+	background-image: linear-gradient(#0094FF, #21007F);
+	color: yellow;
+	padding:1%;
+	text-align: center;
+	background-attachment: fixed;
+	vertical-align: middle;
+}
+
+.column {
+  float: left;
+  width: 50%;
+  vertical-align: middle;
+}
+
+.columnComm{
+  float: left;
+  width: 32%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.row{
+	vertical-align: middle;
+}
+
+div{
+	vertical-align: middle;
+}
+
+a {
+  color: yellow;
+  vertical-align: middle;
+}

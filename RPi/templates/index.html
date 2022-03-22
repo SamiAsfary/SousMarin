@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<title>Sous-marin</title>
+		<link rel="stylesheet" href='../static/style.css'/>
+	</head>
+
+	<body>
+		<h1>Drone sous-marin</h1>
+		 <div class="row">
+			<div class="column" width="50%"><img src="{{ url_for('video_feed') }}" ></div>
+			<div class="column">
+				<div class="row">
+					<div class="columnComm">
+						<h4>Moteur droite à {{ d_percent }}%</h4><br><br>
+						<a href="/Left/100">100% moteur de gauche</a><br><br>
+						<a href="/Left/+">+10% moteur de gauche</a><br><br>
+						<a href="/Left/-">-10% moteur de gauche</a><br><br>
+						<a href="/Left/0">reset moteur de gauche</a><br><br>
+					</div>
+					<div class="columnComm">
+						<h4>Synchronisation</h4><br><br>
+						<a href="/Left/100">100% moteur de gauche</a><br><br>
+						<a href="/Left/+">+10% moteur de gauche</a><br><br>
+						<a href="/Left/-">-10% moteur de gauche</a><br><br>
+						<a href="/Left/0">reset moteur de gauche</a><br><br>
+					</div>
+					<div class="columnComm">
+						<h4>Moteur gauche à {{ g_percent }}%</h4><br><br>
+						<a href="/Right/100">100% moteur de droite</a><br><br>
+						<a href="/Right/+">+10% moteur de droite</a><br><br>
+						<a href="/Right/-">-10% moteur de droite</a><br><br>
+						<a href="/Right/0">reset moteur de droite</a><br><br>
+					</div>
+				</div> 
+			</div>
+		</div> 
+	</body>
+
+</html>
+
